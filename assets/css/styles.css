@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 html {
     font-size: 62.5%;
 }
@@ -46,13 +50,6 @@ a {
 }
 
 /*============ header============ */
-.hero-wrap {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background: #e6f0ff;
-    height: calc(100vh - 91px);
-}
 
 .header-fix {
     background: #e6f0ff;
@@ -60,7 +57,6 @@ a {
     position: sticky;
     top: -26px;
     z-index: 1;
-    
 }
 
 .navbar .btn:hover {
@@ -71,7 +67,6 @@ a {
     align-items: center;
     /* padding-top: 38px; */
     padding: 12px 0px;
-    
 }
 
 .navbar ul {
@@ -113,17 +108,22 @@ a {
     border-radius: 8px;
 }
 
-/* =======hero======== */
+/* ======.hero======== */
 
-.hero {
-    margin-top: 130px;
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: #e6f0ff;
+    height: calc(100vh - 91px);
 }
 
-.hero .info {
+.hero-wrap .info {
     width: 51%;
 }
 
-.hero .subtitle {
+.hero-wrap .subtitle {
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.5;
@@ -132,7 +132,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     font-size: 6.2rem;
     font-weight: 700;
@@ -140,7 +140,7 @@ a {
     color: #000336;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-size: 1.8rem;
     font-weight: 400;
